@@ -20,14 +20,6 @@ import ToastContainer from "./components/ToastContainer/ToastContainer";
 import { CartProvider } from "./components/utils/CartContext";
 import { ModalProvider } from "./components/utils/ModalProvider";
 
-// import Shirts from "./pages/Shirts/Shirts";
-// import Home from "./pages/Home/Home";
-// import ProductPage from "./pages/ProductPage/ProductPage";
-// import Login from "./pages/Login/Login";
-// import LifestyleForm from "./pages/LifestyleForm/LifestyleForm";
-// import Checkout from "./pages/Checkout/Checkout";
-// import Profile from "./pages/Profile/Profile";
-// import HomeDevelopment from "./pages/HomeDevelopment/HomeDevelopment";
 
 import ModalContainer from "./components/ModalContainer/ModalContainer";
 import Footer from "./components/Footer/Footer";
