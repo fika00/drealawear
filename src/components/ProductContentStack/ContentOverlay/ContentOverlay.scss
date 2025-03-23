@@ -1,0 +1,49 @@
+.contentoverlay-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.527) 40%, transparent);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem 5rem;
+  box-sizing: border-box;
+  z-index: 3;
+
+  &-logo {
+    width: 100px;
+  }
+  &-text {
+    max-width: 600px;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contentoverlay-container {
+    padding: 1rem 1rem;
+    justify-content: space-between;
+
+    &-logo {
+      width: 100px;
+    }
+    &-text {
+      font-size: 10px;
+      display: none;
+    }
+    &-right {
+      &-text {
+        text-align: left;
+        font-size: 10px;
+      }
+    }
+  }
+}

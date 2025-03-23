@@ -1,0 +1,22 @@
+.bottomrightcorner-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1rem;
+  height: auto;
+  padding: 1rem;
+  color: gray;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
+  z-index: 99;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottomrightcorner-container {
+    // padding: unset;
+    // height: 100%;
+    // font-size: 0.5rem;
+    display: none;
+  }
+}

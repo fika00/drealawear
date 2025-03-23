@@ -1,0 +1,144 @@
+.navbarmenu-container {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d7d7d7;
+  backdrop-filter: blur(2px);
+  z-index: 8;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  clip-path: circle(0% at 90% 0%);
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 2rem;
+
+    max-width: 1280px;
+    width: 100%;
+  }
+}
+
+.navbarmenuitem-container {
+  padding-left: 1rem;
+  display: flex;
+  overflow: hidden;
+
+  &-letter {
+    position: relative;
+    &-text {
+      cursor: pointer;
+      font-size: 7vh;
+      line-height: 7vh;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #101010;
+      transform-origin: left;
+
+      &-apsolute {
+        position: absolute;
+        left: 0;
+        top: -100%;
+        transform-origin: bottom;
+        font-weight: 550;
+      }
+    }
+  }
+}
+
+.invertednavbar-container {
+  position: absolute;
+  width: 100vw;
+
+  z-index: 99;
+
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  padding: 1rem;
+
+  mix-blend-mode: exclusion;
+
+  &-inner {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    overflow: hidden;
+
+    max-width: 1280px;
+
+    height: 80px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+    border-radius: 8px;
+
+    &-close {
+      cursor: pointer;
+      width: 30px;
+    }
+
+    &-menu {
+      cursor: pointer;
+      &-img {
+        width: 30px;
+      }
+    }
+
+    &-middle {
+      display: flex;
+      gap: 1rem;
+      &-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    &-logo {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .navbarmenuitem-container {
+    &-letter {
+      &-text {
+        font-size: 5rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarmenuitem-container {
+    padding-left: 2rem;
+    &-letter {
+      &-text {
+        font-size: 3rem;
+        line-height: 1;
+      }
+    }
+  }
+}

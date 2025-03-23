@@ -1,0 +1,98 @@
+.orderselement-container {
+  width: 100%;
+  // height: 300px;
+
+  position: relative;
+
+  border-bottom: 1px solid #1010101a;
+
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  justify-items: center; // Add this to center items horizontally
+
+  &-left {
+    &-text {
+      font-size: 1rem;
+      color: black;
+    }
+
+    &-ordernum {
+      font-size: 1rem;
+      color: black;
+    }
+  }
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.ordercontent-container {
+  // height: 50%;
+  height: 70px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  padding: 10px;
+
+  &-inner {
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    // position: absolute;
+    justify-self: start; // Add this to align items to the start by default
+
+    &:only-child {
+      justify-self: center; // This will center the item when it's the only child
+    }
+
+    &-blank {
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      box-shadow: -5px 0 20px #12121214;
+    }
+    &-moreitems {
+      font-size: 1rem;
+      color: #101010;
+      font-weight: 700;
+    }
+    &-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .orderselement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .ordercontent-container {
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .orderselement-container {
+    height: auto;
+    flex-direction: column;
+    &-left {
+      // text-align: center;
+      // align-items: center;
+    }
+  }
+}

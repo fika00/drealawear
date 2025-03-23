@@ -1,0 +1,16 @@
+.checkout-container {
+  width: 100%;
+  height: 100lvh;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  &-cartcontents {
+    grid-column: span 2;
+  }
+}
+
+.stagewrapper-container {
+  background-color: #d1d1d1;
+  border-right: 1px solid #10101029;
+}

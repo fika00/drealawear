@@ -1,0 +1,107 @@
+.productsidebar-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.65);
+
+  backdrop-filter: blur(3px);
+  padding: 3rem;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: translate 0.5s ease-in-out;
+
+  &-hidden {
+    translate: -100% 0;
+  }
+
+  &-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+
+    height: 100%;
+
+    background: linear-gradient(
+      to bottom right,
+      rgba($color: white, $alpha: 0.1),
+      rgba($color: #515151, $alpha: 0.1) 50%
+    );
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 24px;
+
+    &-shirtname {
+      font-size: 5rem;
+    }
+
+    &-description {
+      text-align: left;
+    }
+
+    &-divider {
+      width: 100%;
+      opacity: 0.3;
+    }
+
+    &-undername {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &-right {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .productsidebar-container {
+    width: 100%;
+    padding: 1rem;
+
+    &-gradient {
+      width: 100%;
+    }
+
+    &-inner {
+      box-sizing: border-box;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      height: 100%;
+      gap: unset;
+
+      justify-content: space-between;
+
+      &-undername {
+        &-left {
+          text-align: left;
+        }
+      }
+
+      &-shirtname {
+        font-size: 2.5rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

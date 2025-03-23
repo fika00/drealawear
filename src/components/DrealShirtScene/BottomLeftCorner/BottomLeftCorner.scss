@@ -1,0 +1,39 @@
+.bottomleftcorner-container {
+  //   position: absolute;
+  //   left: 10px;
+  //   bottom: 10px;
+  display: flex;
+
+  &-letter-container {
+    overflow: hidden;
+    perspective: 3rem;
+
+    &-letter {
+      color: #d7d7d7;
+      display: block;
+      white-space: pre;
+      font-size: 10rem;
+      line-height: 10rem;
+      font-weight: 400;
+
+      color: white;
+
+      transform-origin: bottom;
+
+      // font-family: "Inter", sans-serif;
+
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bottomleftcorner-container {
+    &-letter-container {
+      &-letter {
+        line-height: 4rem;
+        font-size: 4rem;
+      }
+    }
+  }
+}

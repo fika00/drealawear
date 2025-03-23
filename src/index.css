@@ -1,0 +1,48 @@
+@import url("https://fonts.cdnfonts.com/css/switzer");
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @import url("https://fonts.cdnfonts.com/css/nevrada-neue"); */
+@import url("https://fonts.cdnfonts.com/css/emberly");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #d7d7d7; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.playfair {
+  /* font-family: "Playfair Display", serif; */
+  /* font-family: "Nevrada Neue", sans-serif; */
+
+  /* font-family: "The Aesthetic Essential", sans-serif; */
+  font-family: "Emberly", sans-serif;
+}
+
+body {
+  /* transition: background-color 0.5s ease-in-out; */
+  background-color: #d7d7d7;
+}
+
+* {
+  padding: 0;
+  font-family: "Switzer", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}

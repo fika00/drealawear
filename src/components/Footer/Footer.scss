@@ -1,0 +1,117 @@
+.footer-container {
+  min-height: 20svh;
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: #d7d7d7;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  // margin-top: 1rem;
+  overflow: hidden;
+
+  transition: filter 0.5s ease-in-out;
+
+  &-glow {
+    filter: drop-shadow(0 0 1.5rem rgba(194, 194, 194, 0.1));
+  }
+
+  &-inner {
+    height: 100%;
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+
+    padding: 8rem 0;
+    box-sizing: border-box;
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+      padding: 1rem;
+      font-weight: 200;
+    }
+    &-links {
+      padding: 1rem;
+      // width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 5rem;
+      position: relative;
+      box-sizing: border-box;
+
+      &-imgcont {
+        position: relative;
+        aspect-ratio: 1;
+        &-img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+.footerlist-container {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  &-divider {
+    border: unset;
+    height: 1px;
+    margin: unset;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.539);
+  }
+  &-header {
+    color: black;
+  }
+  &-text {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: rgba(0, 0, 0, 0.717);
+  }
+}
+.footerlist-container-text:hover {
+  color: black;
+}
+@media only screen and (max-width: 800px) {
+  .footer-container {
+    filter: drop-shadow(0 0 2rem rgba(194, 194, 194, 0.351));
+
+    height: 70svh;
+
+    &-inner {
+      padding: unset;
+      overflow: hidden;
+
+      box-sizing: unset;
+      justify-content: space-around;
+      &-bottom {
+        padding: 2rem;
+      }
+      &-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        &-imgcont {
+          padding: 1rem;
+          &-img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footerlist-container {
+    padding: 1rem;
+  }
+}

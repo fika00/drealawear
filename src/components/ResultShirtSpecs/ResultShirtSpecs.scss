@@ -1,0 +1,45 @@
+.resultshirtspecs-container {
+  width: 100%;
+  border-bottom: 1px solid #d7d7d757;
+  border-top: 1px solid #d7d7d757;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &-inner {
+    position: relative;
+    display: flex;
+
+    &-row {
+      display: flex;
+      flex-wrap: nowrap;
+
+      &-word {
+        font-size: 5rem;
+        padding-left: 7rem;
+        flex: 1;
+        box-sizing: border-box;
+        color: #d7d7d7;
+        text-wrap: nowrap;
+
+        &-1 {
+          color: #f9de8e;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resultshirtspecs-container {
+    &-inner {
+      &-row {
+        &-word {
+          font-size: 2rem;
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.dreallifestylevideo-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-inner {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    &-video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4rem;
+      opacity: 0.45;
+    }
+  }
+}
+
+.lifestyleclubsectionvideohud-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  translate: -50% -50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+
+  &-text {
+    font-size: 9rem;
+    text-transform: capitalize;
+
+    // font-family: "Switzer", sans-serif;
+
+    color: #f9de8e;
+    // color: #d7d7d7;
+    font-weight: 400;
+
+    filter: drop-shadow(3px 3px 0px black);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dreallifestylevideo-container {
+    padding: 1rem;
+
+    &-inner {
+      &-video {
+        border-radius: 2rem;
+      }
+    }
+  }
+  .lifestyleclubsectionvideohud-container {
+    &-text {
+      font-size: 5rem;
+    }
+  }
+}

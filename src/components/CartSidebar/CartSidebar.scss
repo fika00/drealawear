@@ -1,0 +1,127 @@
+.cartsidebar-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  overflow: hidden;
+
+  &-background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #101010, $alpha: 0.6);
+    cursor: pointer;
+  }
+  &-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #d7d7d7;
+    width: 45%;
+    height: 100%;
+
+    border-left: 1px solid #919191;
+
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  &-sidebar::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.25), transparent);
+  }
+}
+
+.cartcontents-container {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &-list {
+    overflow-y: scroll;
+    flex: 1;
+    height: 300px;
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem;
+    }
+  }
+
+  &-divider {
+    width: 100%;
+    height: 1px;
+    border: unset;
+    background-color: rgba($color: #101010, $alpha: 0.3);
+    flex-shrink: 0;
+  }
+
+  &-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-text {
+      color: #101010;
+      font-size: 3rem;
+    }
+    &-close {
+      cursor: pointer;
+    }
+  }
+}
+
+.notloggedin-container {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    font-size: 3rem;
+    color: #101010;
+  }
+}
+
+.cartbottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &-total {
+    padding: 1rem;
+
+    &-text {
+      color: #101010;
+      position: relative;
+      display: inline-block;
+      font-size: 2rem;
+
+      &-wrapper {
+        overflow: hidden;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cartsidebar-container {
+    &-sidebar {
+      width: 100%;
+    }
+  }
+}

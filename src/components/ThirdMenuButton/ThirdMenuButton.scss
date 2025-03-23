@@ -1,0 +1,36 @@
+.thirdmenubutton-container {
+  background-color: #101010;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  padding: 1rem;
+
+  transition: opacity 0.3s ease-in-out;
+
+  &-disabled {
+    opacity: 0.4;
+  }
+
+  &-wide {
+    width: 100%;
+  }
+
+  &-light {
+    background-color: white;
+  }
+
+  &-light .thirdmenubutton-container-text {
+    color: black;
+  }
+
+  &-text {
+    color: #d7d7d7;
+  }
+}
+
+.thirdmenubutton-container:active {
+  translate: 0 1px;
+}

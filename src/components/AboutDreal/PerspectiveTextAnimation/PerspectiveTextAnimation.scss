@@ -1,0 +1,10 @@
+.perspectivetextanimation-container {
+  display: flex;
+
+  &-letterwrapper {
+    overflow: hidden;
+    &-letter {
+      display: inline-block;
+    }
+  }
+}

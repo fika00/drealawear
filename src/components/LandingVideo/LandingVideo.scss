@@ -1,0 +1,22 @@
+.landingvideo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  &-video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    scale: 1.1;
+    opacity: 0;
+
+    transition: scale 0.75s cubic-bezier(0.34, 0.04, 0.4, 0.98),
+      opacity 0.75s cubic-bezier(0.34, 0.04, 0.4, 0.98);
+    &-ready {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+}

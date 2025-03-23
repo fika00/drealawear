@@ -1,0 +1,28 @@
+.orderstatus-container {
+  display: inline-block;
+
+  padding: 0.75rem 2rem;
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+  // width: auto;
+
+  border: 1px solid #67676748;
+
+  background: linear-gradient(145deg, rgb(226, 226, 226), #e4e4e4);
+
+  &-completed {
+    background: linear-gradient(145deg, #a1f9a2, #87d288);
+    color: white;
+  }
+
+  &-cancelled {
+    background: linear-gradient(145deg, #ff8989, #ff3333);
+    color: white;
+  }
+
+  &-text {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,43 @@
+.primarybutton {
+  border: unset;
+  outline: unset;
+  position: relative;
+
+  background-color: rgb(222, 222, 222);
+  align-self: center;
+  padding: 15px 30px;
+
+  border-radius: 3rem;
+
+  user-select: none;
+
+  color: black;
+
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+
+  filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.5));
+}
+.primarybutton:active {
+  translate: 0 2px;
+}
+
+.primarybutton:hover {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .primarybutton:hover .primarybutton-text {
+    color: #d7d7d7;
+  }
+  .primarybutton:hover {
+    background-color: transparent;
+  }
+  .primarybutton:active {
+    background-color: white;
+  }
+
+  .primarybutton:active .primarybutton-text {
+    color: black;
+  }
+}

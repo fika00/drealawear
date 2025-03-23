@@ -1,0 +1,25 @@
+.productpage-container {
+  width: 100%;
+  min-height: 110lvh;
+  background-color: #d7d7d7;
+
+  &-scrollHitbox {
+    width: 100%;
+
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  &-herowrapper {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  &-below {
+    position: relative;
+  }
+}

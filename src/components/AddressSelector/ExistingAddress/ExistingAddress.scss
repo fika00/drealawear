@@ -1,0 +1,47 @@
+.existingaddress-container {
+  height: 80px;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #1010101a;
+  opacity: 0.45;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: black;
+
+  transition: opacity 0.15s ease-in-out;
+  filter: blur(0.3px);
+
+  &-remove {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    padding: 5px;
+    &:hover {
+      background-color: #1010101a;
+      border-radius: 100px;
+    }
+    &-icon {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+
+    filter: blur(0);
+  }
+  &-selected {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

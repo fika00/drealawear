@@ -1,0 +1,32 @@
+.headerbiganimated-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+
+  &-letter {
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-weight: 400;
+    white-space: pre;
+    position: relative;
+    font-size: 10rem;
+    line-height: 10rem;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    // color: antiquewhite;
+
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerbiganimated-container {
+    &-letter {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}

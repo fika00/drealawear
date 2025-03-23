@@ -1,0 +1,26 @@
+.shirtcatalogue-container {
+  // max-height: 100vh;
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+
+  background-color: #101010;
+}
+
+.backbutton {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .shirtcatalogue-container {
+    flex-direction: column;
+  }
+}

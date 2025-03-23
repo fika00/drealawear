@@ -1,0 +1,91 @@
+.shirtscenecolorswitcher-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  position: absolute;
+
+  top: 50%;
+  right: 50px;
+  height: 300px;
+
+  translate: 0 -50%;
+
+  &-progress {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    background-color: #d7d7d72a;
+    height: 290px;
+
+    z-index: -1;
+
+    translate: -50% -50%;
+
+    transform-origin: top;
+  }
+
+  &-colorbox {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0);
+
+    transition: box-shadow 0.4s ease-in-out;
+
+    cursor: pointer;
+
+    &-wrapper {
+      padding: 2px;
+      border-radius: 50px;
+      border: 2px solid rgba(0, 0, 0, 0.422);
+    }
+    &-selected {
+      border: unset;
+      box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .shirtscenecolorswitcher-container {
+    top: 100px;
+    left: 50%;
+
+    translate: -50% 0%;
+    width: 100%;
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 1rem 50px;
+    height: auto;
+
+    &-progress {
+      height: 1px;
+      width: 290px;
+      top: 50%;
+      transform-origin: left;
+
+      left: 50%;
+    }
+
+    &-colorbox {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0);
+
+      transition: box-shadow 0.4s ease-in-out;
+
+      &-selected {
+        border: unset;
+        box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}

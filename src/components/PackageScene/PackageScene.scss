@@ -1,0 +1,12 @@
+.packagescene-container {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #d7d7d7;
+
+  position: sticky;
+
+  &-wrapper {
+    height: 200vh;
+  }
+}

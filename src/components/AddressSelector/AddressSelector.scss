@@ -1,0 +1,27 @@
+.addressselector-container {
+  min-height: 80px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #7373738d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+
+  background-color: #d5d5d5;
+
+  cursor: pointer;
+
+  &-profile {
+    max-height: 100%; // Allow height to fill parent when profile is true
+    height: 100%; // Set height to 100% of the parent
+    overflow-y: auto; // Enable scrolling within the component when content overflows
+  }
+  &-loading {
+    filter: blur(2px);
+  }
+}

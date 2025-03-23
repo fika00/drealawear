@@ -1,0 +1,31 @@
+.shippingcostinfo-container {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #d7d7d7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1px;
+
+  padding: 1rem;
+
+  border: 1px solid #1010102b;
+
+  &-top {
+    font-weight: 500;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+  &-bottom {
+    font-weight: 500;
+
+    color: gray;
+
+    &-bold {
+      color: black;
+    }
+  }
+}

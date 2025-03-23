@@ -1,0 +1,87 @@
+.behindpackagepics-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  filter: drop-shadow(0 0 50px #00000071);
+
+  //   box-shadow: 0px 0px 20px 10px black;
+}
+
+.floatingpicture-container {
+  position: absolute;
+  overflow: hidden;
+
+  max-width: 200px;
+
+  &-img {
+    scale: 1.5;
+    width: 100%;
+  }
+
+  &-1 {
+    left: 400px;
+    top: 100px;
+    max-width: 300px;
+  }
+  &-2 {
+    left: 10%;
+    top: unset;
+    bottom: 1rem;
+    max-width: 150px;
+  }
+  &-3 {
+    right: 125px;
+    top: unset;
+    bottom: 80px;
+  }
+  &-4 {
+    right: 300px;
+    top: 200px;
+  }
+  &-5 {
+    top: 300px;
+    left: 30px;
+  }
+  &-6 {
+    bottom: 50px;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .floatingpicture-container {
+    max-width: 30vw;
+
+    &-1 {
+      left: 40vw;
+      top: 20vh;
+      max-width: 30vw;
+    }
+    &-2 {
+      left: 50%;
+      bottom: 10vh;
+      max-width: 20vw;
+    }
+    &-3 {
+      right: 5%;
+      top: unset;
+      bottom: 20%;
+    }
+    &-4 {
+      right: 3%;
+      top: 5%;
+    }
+    &-5 {
+      top: 7%;
+      left: 4%;
+    }
+    &-6 {
+      bottom: 15%;
+      left: 10%;
+    }
+  }
+}

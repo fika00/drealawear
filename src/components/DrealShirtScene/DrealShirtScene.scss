@@ -1,0 +1,32 @@
+.drealshirtscene-container {
+  width: 100%;
+  height: 100vh;
+  // position: sticky;
+  // left: 0;
+  // top: 0;
+
+  &-bottomhud {
+    left: 50%;
+    bottom: 0;
+    translate: -50% 0;
+    position: absolute;
+    display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // max-width: 1280px;
+    padding: 1rem;
+    width: 100%;
+    z-index: 2;
+
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .drealshirtscene-container {
+    &-bottomhud {
+      padding: 1rem;
+      align-items: center;
+    }
+  }
+}

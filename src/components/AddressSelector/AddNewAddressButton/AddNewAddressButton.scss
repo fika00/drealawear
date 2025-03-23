@@ -1,0 +1,20 @@
+.addnewaddressbutton-container {
+  border-top: solid 1px #1010102e;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 1rem;
+  flex-shrink: 0;
+  &-text {
+    color: #101010;
+    font-family: "Inter", sans-serif;
+  }
+
+  &-plus {
+    width: 20px;
+    height: 20px;
+  }
+}

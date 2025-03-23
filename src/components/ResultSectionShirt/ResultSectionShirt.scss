@@ -1,0 +1,207 @@
+.resultsectionshirt-container {
+  width: 100%;
+  // min-height: 800vh;
+  // padding-top: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  align-items: center;
+
+  &-inner {
+    width: 100%;
+
+    position: relative;
+
+    // flex-grow: 1;
+    height: 300vh;
+
+    &-sticky {
+      position: sticky;
+      left: 0;
+      top: 0;
+
+      &-backtext {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        translate: -50% -50%;
+
+        font-size: 10rem;
+
+        font-weight: 300;
+        color: #f9de8e;
+
+        font-style: italic;
+
+        &-front {
+          color: transparent;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #101010;
+        }
+      }
+    }
+  }
+
+  &-text {
+    font-family: "Inter", sans-serif;
+    font-size: 7rem;
+    // text-transform: uppercase;
+    font-weight: 400;
+    color: gray;
+    width: 55%;
+
+    padding: 5rem 0;
+    box-sizing: border-box;
+
+    &-accent {
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+.speclist-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  translate: -50% -50%;
+
+  &-inner {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    padding: 0 15%;
+  }
+}
+
+.specelement-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  // width: 400px;
+  // max-width: 30%;
+  font-family: "Inter", sans-serif;
+
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+
+  &-connector {
+    width: 2px;
+    background-color: #d7d7d7;
+    height: auto;
+    border: unset;
+    position: absolute;
+  }
+
+  &-header {
+    font-size: 7rem;
+    font-weight: 800;
+    color: #f9de8e;
+    display: inline-block;
+    white-space: pre;
+
+    &-wrapper {
+      display: flex;
+      overflow: hidden;
+      gap: 10px;
+    }
+  }
+
+  &-specs {
+    font-size: 2rem;
+    color: gray;
+    display: inline-block;
+
+    &-wrapper {
+      display: flex;
+      overflow: hidden;
+      gap: 10px;
+    }
+  }
+  &-text {
+    color: #d7d7d7;
+
+    font-size: 1.5rem;
+
+    &-wrapper {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 600px;
+
+      &-word {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resultsectionshirt-container {
+    &-text {
+      font-size: 3rem;
+    }
+  }
+
+  .specelement-container {
+    top: 10%;
+    bottom: unset;
+
+    translate: unset;
+  }
+
+  .speclist-container {
+    padding: unset;
+    width: 100%;
+
+    &-inner {
+      padding: unset;
+    }
+  }
+
+  .specelement-container {
+    padding: 0 1rem;
+    box-sizing: border-box;
+
+    width: 100%;
+
+    mix-blend-mode: exclusion;
+
+    // background-color: #000000f0;
+
+    // backdrop-filter: blur(3px);
+
+    max-width: unset;
+
+    &-header {
+      font-size: 3rem;
+      &-wrapper {
+        justify-content: center;
+      }
+    }
+    &-specs {
+      font-size: 1.5rem;
+      color: whitesmoke;
+      font-weight: 600;
+      &-wrapper {
+        justify-content: center;
+      }
+    }
+    &-text {
+      color: whitesmoke;
+      font-weight: 600;
+
+      font-size: 1.2rem;
+      &-wrapper {
+        justify-content: center;
+      }
+    }
+  }
+}

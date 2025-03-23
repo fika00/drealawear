@@ -1,0 +1,11 @@
+.dynamicdivider-container {
+  position: absolute;
+  width: 150%;
+  height: 2px;
+
+  top: 20%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: #101010;
+  opacity: 0.2;
+}

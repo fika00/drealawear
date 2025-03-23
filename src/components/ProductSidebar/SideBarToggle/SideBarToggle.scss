@@ -1,0 +1,31 @@
+.sidebartoggle-container {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+
+  bottom: 50px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid gray;
+  border-right: unset;
+
+  border-radius: 8px 0 0 8px;
+
+  translate: 0 -25%;
+
+  transition: translate 0.3s;
+
+  &-hidden {
+    border-radius: 0 8px 8px 0;
+    border: 1px solid gray;
+    border-left: unset;
+    translate: 100% -25%;
+
+    background-color: rgba($color: #000000, $alpha: 0.65);
+
+    backdrop-filter: blur(3px);
+  }
+}

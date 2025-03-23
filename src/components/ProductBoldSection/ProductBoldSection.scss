@@ -1,0 +1,15 @@
+.productboldsection-container {
+  //   overflow: hidden;
+  width: 100vw;
+  //   height: 200vh;
+  //   min-height: 400lvh;
+  // overflow: hidden;
+  position: relative;
+
+  margin-top: 10rem;
+
+  &-inner {
+    height: 100%;
+    transition: background-color 0.5s ease-in-out;
+  }
+}

@@ -1,0 +1,51 @@
+.shirtsectiontext-container {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: pre;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+
+  mix-blend-mode: color-dodge;
+
+  &-row-container {
+    // width: 100%;
+    &-inner {
+      position: relative;
+      // text-align: right;
+      // right: 100%;
+      display: flex;
+      &-left {
+        // left: 100%;
+      }
+
+      &-text {
+        opacity: 0.7;
+        text-transform: uppercase;
+        color: #d7d7d7;
+        font-weight: 700;
+        font-size: 10rem;
+        // opacity: 0.12;
+        color: #181818;
+
+        // filter: blur(2px);
+
+        &-gray {
+          font-weight: 500;
+
+          // color: gray;
+          color: #959595;
+        }
+        &-front {
+          color: white;
+          mix-blend-mode: lighten;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.topslashtransition-container {
+  margin-top: 300px;
+
+  &-wrapper {
+    // overflow: hidden;
+    // padding-top: 5rem;
+  }
+
+  &-inner {
+    height: 20vh;
+    width: 100%;
+    position: relative;
+
+    background-color: #101010;
+
+    &-textcontainer {
+      position: absolute;
+      left: 50%;
+      top: 0;
+
+      translate: -50% -50%;
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        font-family: "ClashDisplay", serif;
+
+        font-size: 3rem;
+        color: #d7d7d7;
+        font-weight: 800;
+        text-wrap: nowrap;
+        text-transform: uppercase;
+
+        &-dark {
+          color: #101010;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .topslashtransition-container-inner-textcontainer {
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+}

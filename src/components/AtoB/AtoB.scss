@@ -1,0 +1,60 @@
+.atob-container {
+  width: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.atob-point-container {
+  width: 10px;
+  height: 10px;
+
+  background-color: #d7d7d7;
+
+  border-radius: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+  translate: -50% -50%;
+
+  &-inner {
+    position: relative;
+
+    width: 10px;
+    height: 10px;
+
+    &-text {
+      font-size: 1.2rem;
+      left: 50%;
+      top: 0;
+
+      translate: -50% 0;
+      position: absolute;
+      color: #d7d7d7;
+
+      font-weight: 300;
+
+      &-bottom {
+        top: unset;
+        bottom: 0;
+
+        translate: -50% 0;
+      }
+    }
+  }
+
+  &-bottom {
+    top: unset;
+    bottom: 0;
+    translate: -50% 50%;
+  }
+}
+
+.atob-line-container {
+  width: 1px;
+  height: 100%;
+  align-self: center;
+  transform-origin: top;
+  background-color: #d7d7d7;
+}

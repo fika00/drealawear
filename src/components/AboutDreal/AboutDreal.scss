@@ -1,0 +1,132 @@
+.aboutdreal-container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  // align-items: center;
+  // padding: 7rem 0;
+
+  &-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    &-text {
+      color: gray;
+      position: absolute;
+      left: 0;
+      top: 200px;
+      font-size: 3rem;
+      line-height: 1;
+      width: 300px;
+      text-align: left;
+    }
+
+    &-left {
+      display: grid;
+      grid-template-rows: 2;
+      width: 100%;
+      height: 100%;
+
+      padding: 1rem;
+
+      gap: 1rem;
+
+      &-reality {
+        color: gray;
+      }
+    }
+
+    &-right {
+      position: relative;
+    }
+
+    // background-color: beige;
+
+    &-img-wrapper {
+      position: absolute;
+      max-width: 300px;
+      // max-height: 300px;
+      overflow: hidden;
+
+      &-1 {
+        right: 200px;
+        top: 50px;
+      }
+      &-2 {
+        right: 400px;
+        bottom: 100px;
+      }
+      &-3 {
+        right: 20px;
+        bottom: 350px;
+      }
+
+      &-img {
+        height: 100%;
+        width: 100%;
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutdreal-container {
+    &-inner {
+      padding: 1rem;
+      display: block;
+
+      &-left {
+        width: 100%;
+        padding: 3rem 1rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &-right {
+        width: 100%;
+        height: 100%;
+      }
+      &-text {
+        font-size: 2rem;
+      }
+      &-secondtext {
+        font-size: 1rem;
+      }
+
+      &-img-wrapper {
+        max-height: 200px;
+        max-width: 150px;
+
+        // opacity: 0.5;
+
+        mix-blend-mode: difference;
+
+        &-1 {
+          top: 10vh;
+          right: unset;
+          left: 5%;
+        }
+
+        &-2 {
+          right: unset;
+          bottom: 10vh;
+          left: 3%;
+        }
+
+        &-3 {
+          right: 5%;
+          bottom: 35vh;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.smallmap-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  gap: 0.7rem;
+  &-line {
+    border-radius: 3px;
+    width: 5px;
+    height: 30px;
+    background-color: #808080;
+    cursor: pointer;
+  }
+}

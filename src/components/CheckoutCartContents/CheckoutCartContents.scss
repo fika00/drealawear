@@ -1,0 +1,17 @@
+.checkoutcartcontents-container {
+  height: 100vh;
+
+  position: relative;
+
+  grid-column: span 2;
+
+  &-list {
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    padding-top: 100px;
+  }
+}

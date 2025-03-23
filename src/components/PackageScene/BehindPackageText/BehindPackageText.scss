@@ -1,0 +1,48 @@
+.behindpackagetext-container {
+  width: 100vw;
+  height: 100svh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  //   background-color: #d7d7d7;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 1rem;
+
+  gap: 5rem;
+
+  &-text {
+    color: #d7d7d7;
+    font-size: 40vh;
+    line-height: 1;
+    margin: none;
+    padding: 0;
+    vertical-align: middle;
+
+    text-transform: uppercase;
+    color: #101010;
+
+    &-front {
+      -webkit-text-stroke-width: 0.2px;
+      color: transparent;
+      -webkit-text-stroke-color: #d7d7d7;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .behindpackagetext-container {
+    gap: 10px;
+
+    grid-template-columns: 1fr;
+
+    &-text {
+      font-size: 2rem;
+    }
+  }
+}

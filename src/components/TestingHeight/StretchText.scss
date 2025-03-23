@@ -1,0 +1,36 @@
+.stretchtext-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-textwrapper {
+    height: auto;
+    width: auto;
+    &-text {
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 10rem;
+      line-height: 0.71;
+      transform: translateY(10%);
+      scale: 1 1;
+
+      &-sans {
+        font-family: "Switzer", sans-serif;
+        transform: unset;
+        line-height: 0.6;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stretchtext-container {
+    &-textwrapper {
+      &-text {
+        font-size: 10rem;
+      }
+    }
+  }
+}

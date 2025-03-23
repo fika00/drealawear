@@ -1,0 +1,64 @@
+.accordion-container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+  // padding: 4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  &-inner {
+    display: flex;
+    gap: 1px;
+    position: absolute;
+
+    // max-width: 1280px;
+  }
+}
+
+.tile-container {
+  height: 100%;
+  height: 600px;
+  width: 900px;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: width 1.2s cubic-bezier(0.68, 0, 0.35, 1);
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+
+    opacity: 1;
+
+    // filter: saturate(0.3);
+
+    &-expanded {
+      opacity: 1;
+
+      // filter: saturate(1);
+    }
+  }
+
+  &-image:active {
+    translate: 0 1px;
+  }
+}
+
+.tile-container:hover {
+  .tile-container-image {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion-container {
+    padding: 1rem;
+  }
+}
